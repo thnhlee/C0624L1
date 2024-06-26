@@ -35,31 +35,53 @@ class BaiTap
         // }
 
 
-        //////////////////////////////Tính Diem trung binh
-        Console.Write("Nhap diem trung binh = ");
-        var score = Convert.ToDouble(Console.ReadLine());
+        // //////////////////////////////Tính Diem trung binh
+        // Console.Write("Nhap diem trung binh = ");
+        // var score = Convert.ToDouble(Console.ReadLine());
 
-        if( score >= 9 && score <= 10)
-        {
-            Console.WriteLine("Xuat sac");
-        }
-        else if(score >= 8 && score < 9 )
-        {
-            Console.WriteLine("Gioi");
-        }
-        else if(score >= 7  && score < 8 )
-        {
-            Console.WriteLine("Kha");
-        }
-        else if(score >= 5  && score < 7 )
-        {
-            Console.WriteLine("Trung binh");
-        }
-        else if(score >= 0 &&  score < 5)
-        {
-            Console.Write("Yeu");
-        }
-        else Console.WriteLine("Invalid score! ");
+        // if( score >= 9 && score <= 10)
+        // {
+        //     Console.WriteLine("Xuat sac");
+        // }
+        // else if(score >= 8 && score < 9 )
+        // {
+        //     Console.WriteLine("Gioi");
+        // }
+        // else if(score >= 7  && score < 8 )
+        // {
+        //     Console.WriteLine("Kha");
+        // }
+        // else if(score >= 5  && score < 7 )
+        // {
+        //     Console.WriteLine("Trung binh");
+        // }
+        // else if(score >= 0 &&  score < 5)
+        // {
+        //     Console.Write("Yeu");
+        // }
+        // else Console.WriteLine("Invalid score! ");
+
+
+
+        //Ternary operator (Toán tử 3 ngôi)
+        // bool gender = false;
+        // bool married = true;
+        // string firstName = "Le";
+
+        // Console.Write($"{(gender ? "Mr" : 
+        //                     married ? "Mrs" : "Ms")}. {firstName}");
+
+
+        //Tìm số lớn nhất bằng toán tử 3 ngôi
+        Console.Write("Nhap a: ");
+        var a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Nhap b: ");
+        var b = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Nhap c: ");
+        var c = Convert.ToInt32(Console.ReadLine());
+
+        int max = a > b ? (a > c ? a : c) : (b > c ? b : c);
+        Console.Write($"So lon nhat la {max}");
 
     }
 }
