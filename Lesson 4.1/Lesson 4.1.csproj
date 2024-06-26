@@ -6,7 +6,7 @@
     <RootNamespace>Lesson_4._1</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <!-- <StartUpObject>Lesson_4._1.hehe</StartUpObject> -->
+    <StartUpObject>Lesson_4._1.BaiTap</StartUpObject>
   </PropertyGroup>
 
 </Project>

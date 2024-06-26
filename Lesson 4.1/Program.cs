@@ -77,31 +77,31 @@ class Program
         var a = Convert.ToInt32(Console.ReadLine());
         Console.Write("b = ");
         var b = Convert.ToInt32(Console.ReadLine());
-        Console.Write("b = ");
+        Console.Write("c = ");
         var c = Convert.ToInt32(Console.ReadLine());
 
-        double delta = b*b - 4*a*c;
+        double delta = b * b - 4 * a * c;
         Console.WriteLine($"Delta = {delta}");
 
-        if(a == 0)
+        if (a == 0)
         {
-            Console.WriteLine($"Phuong trinh co nghiem x= {(-c)/b}");
+            Console.WriteLine($"Phuong trinh co nghiem x= {(-c) / b}");
         }
-        else if(delta < 0)
+        else if (delta < 0)
         {
             Console.WriteLine("Phuong trinh vo nghiem");
         }
 
-        else if(delta > 0)
+        else if (delta > 0)
         {
-            double x1 = (-b + Math.Sqrt(delta)) / (2*a);
-            double x2 = (-b - Math.Sqrt(delta)) / (2*a);
+            double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+            double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
             Console.WriteLine($"Phuong trinh co nghiem x1= {x1}");
             Console.WriteLine($"Phuong trinh co nghiem x2= {x2}");
         }
-        else 
+        else
         {
-            Console.WriteLine($"Phuong trinh co nghiem kep x= {(-b)/2*a}");
+            Console.WriteLine($"Phuong trinh co nghiem kep x= {(-b) / 2 * a}");
         }
 
 
